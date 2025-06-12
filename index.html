@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>first crud project</title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,12 +19,11 @@
       <input type="text" placeholder="tittle" id="title">
       <!--price-->
       <div class="price">
-       <input onkeyup="getTotal()"  type="number" placeholder="price" id="price">
-       <input onkeyup="getTotal()"  type="number" placeholder="taxes" id="taxes">
-       <input onkeyup="getTotal()"  type="number" placeholder="ads" id="ads">
+       <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+       <input  onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+       <input  onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
        <input  onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
-
-       <small id="total"></small>
+       <small id="total">###</small>
       </div>
       <input  type="number" placeholder="count" id="count">
       <input  type="text" placeholder="category" id="category">
@@ -34,14 +33,15 @@
 <!--outputs-->
    <div class="outputs">
       <div class="searchBlock">
-         <input type="text" placeholder="search" id="search" onkeyup="searchData(this.value`)">
+         <input type="text" placeholder="search" id="search" >
          <div class="btnSearch">
-            <button id="searchTitle" onclick="getSearchMood(this.id)">search by title</button>
-            <button id="searchCategory" onclick="getSearchMood(this.id)">search by category</button>
+            <button id="searchTitle">search by title</button>
+            <button id="searchCategory">search by category</button>
          </div>
       </div>
 
-<div id="deleteAll"></div>
+      <div id="clean">clean data</div>
+
       <table>
          <thead>
             <tr>
@@ -57,8 +57,10 @@
                <th>delete</th>
             </tr>
          </thead>
-         <tbody id="tbody"></tbody>
-   </div>
+         <tbody id="tbody">
+
+         </tbody>
+      </table>
 
   </div>
    <script src="app.js"></script>
